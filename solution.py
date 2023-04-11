@@ -15,7 +15,7 @@ def solution(x_success: int,
     z = (y_success/y_cnt - x_success/x_cnt) / (p_hat * (1 - p_hat) * (1/x_cnt + 1/y_cnt)) ** 0.5
     p_value = 1 - stats.norm.cdf(z)
 
-    if p_value < 0.05:
+    if p_value > 0.05:
       res = False
     else:
       res = True
