@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 
-chat_id = 752592494 
+chat_id = 752592494
 
 def solution(x_success: int, 
              x_cnt: int, 
@@ -19,4 +19,4 @@ def solution(x_success: int,
       res = False
     else:
       res = True
-    return res # Ваш ответ, True или False
+    return res
