@@ -20,3 +20,16 @@ def solution(x_success: int,
     else:
       res = True
     return res
+
+  import pandas as pd
+import numpy as np
+
+#another solution:
+
+chat_id = 752592494
+
+def solution(x_success, x_cnt, y_success, y_cnt):
+    res = proportions_ztest([x_success, y_success],
+                            [x_cnt, y_cnt],
+                            alternative='smaller')
+    return res[1] < 0.05
